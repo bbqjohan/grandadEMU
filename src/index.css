@@ -2,14 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1, "ss02" 1; /* fix for Chrome */
-  height: 100vh;
-}
-
 /* @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
   }
+} */
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1, "ss02" 1; /* fix for Chrome */
+  font-size: 16px;
+  height: 100vh;
+}
+
+:root {
+  --theme-font-size-base: 1rem;
+  --theme-bg-app: #121212;
+  --theme-bg-elevation-1: #222222;
+  --theme-bg-elevation-2: #272727;
+  --theme-bg-elevation-3: #2c2c2c;
+  --theme-shadow-elevation-1: 40% #000 0, 2, 4, 0;
+  --theme-shadow-elevation-2: 40% #000 0, 2, 6, 0;
+  --theme-shadow-elevation-3: 40% #000 0, 2, 9, 0;
+  --theme-color-text-primary: rgb(255 255 255 / 0.9);
+  --theme-color-text-secondary: rgb(255 255 255 / 0.6);
+  --theme-color-text-tertiary: rgb(255 255 255 / 0.35);
+  --theme-color-white: #dedede;
+  --theme-color-black: #000;
+  --theme-rounding-full: 9999px;
+}
+
+.theme-dark {
+  background-color: var(--theme-bg-app);
+  color: var(--theme-color-text-primary);
+}
+
+/* .react-aria-Button {
+  color: var(--theme-color-black);
+  font-size: var(--theme-font-size);
+  border-radius: var(--theme-rounding-full);
 } */
