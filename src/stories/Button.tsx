@@ -165,23 +165,22 @@ const button = cva(
       {
         size: "small",
         isIconOnly: true,
-        class: "size-10",
+        class: "size-8",
       },
       {
         size: "medium",
         isIconOnly: true,
-        class: "size-12",
+        class: "size-10",
       },
       {
         size: "large",
         isIconOnly: true,
-        class: "size-14",
+        class: "size-12",
       },
       {
-        size: "small",
         isIconOnly: true,
         variant: "bordered",
-        class: "size-10 p-[0.375rem]",
+        class: "p-[0.2rem]",
       },
     ],
   },
