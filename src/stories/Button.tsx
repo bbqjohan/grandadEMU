@@ -73,7 +73,7 @@ const button = cva(
       },
       isIconOnly: {
         false: null,
-        true: "p-2 fill-black disabled:fill-[#343434] dark:disabled:fill-[#343434]",
+        true: "p-1 fill-black disabled:fill-[#343434] dark:disabled:fill-[#343434]",
       },
     },
     compoundVariants: [

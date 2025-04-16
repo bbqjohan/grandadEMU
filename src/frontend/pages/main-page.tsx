@@ -53,7 +53,7 @@ const GameSearch = () => {
         <Input
           placeholder="Search for games..."
           aria-label="Game search input"
-          className="w-full rounded py-2 px-3 bg-neutral-700 placeholder:italic focus:outline-none focus:ring ring-cyan-300"
+          className="w-full rounded bg-neutral-700 px-3 py-2 ring-cyan-300 placeholder:italic focus:outline-none focus:ring"
         />
       </TextField>
     </div>
@@ -130,7 +130,7 @@ const GameSelect = () => {
   }, [selConsole]);
 
   return (
-    <div className="flex gap-2 max-h-[500px]">
+    <div className="flex max-h-[500px] gap-2">
       <ConsoleList
         items={consoles}
         selectedKeys={selConsole}
@@ -178,7 +178,7 @@ type ConsoleTitleItem = {
 
 const ConsoleTitles = ({ items, onSelectionChange }: ConsoleTitlesProps) => {
   return (
-    <div className="flex flex-col gap-4 flex-grow">
+    <div className="flex flex-grow flex-col gap-4">
       <h1 className="text-xl font-medium">Games</h1>
       <div className="border border-neutral-700"></div>
       <div className="overflow-auto">
