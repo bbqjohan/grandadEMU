@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -22,7 +23,7 @@ module.exports = {
         elevation3: "0 2px 9px 0 rgb(0 0 0 / 0.4)",
       },
       backgroundColor: {
-        app: "#121212",
+        "layer1-dark": "#121212",
       },
     },
   },
