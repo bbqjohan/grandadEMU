@@ -7,12 +7,12 @@ import {
 import { twMerge } from "tailwind-merge";
 
 export interface SwitchProps extends RaSwitchProps {
+  label?: string;
   size?: "small" | "medium" | "large";
 }
 
 /** Primary UI component for user interaction */
-export const Switch = ({ size, ...props }: SwitchProps) => {
-  const [checked, setChecked] = useState(true);
+export const Switch = ({ size, label, ...props }: SwitchProps) => {
   return (
     <RaSwitch
       className={twMerge(
@@ -20,8 +20,6 @@ export const Switch = ({ size, ...props }: SwitchProps) => {
         size === "medium" ? "text-base" : "",
         size === "large" ? "text-lg" : "",
       )}
-      isSelected={checked}
-      onChange={setChecked}
       {...props}
     >
       <div
@@ -43,7 +41,7 @@ export const Switch = ({ size, ...props }: SwitchProps) => {
           )}
         />
       </div>
-      Wi-Fi
+      {label}
     </RaSwitch>
   );
 };
